@@ -1,0 +1,39 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="skeleton-slides">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `skeleton-slides`
+     *
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class SkeletonSlides extends Polymer.Element {
+      static get is() {
+        return 'skeleton-slides';
+      }
+
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'skeleton-slides'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(SkeletonSlides.is, SkeletonSlides);
+  </script>
+</dom-module>
